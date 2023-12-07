@@ -1,16 +1,37 @@
 ---
-
+import BaseLayout from "../layouts/main.astro";
+import { FeatureSectionImage, FeatureSectionContent } from "../components/FeatureSections"; 
+import { ContentTestimonial } from "../components/ContentSections";
+import { Footer } from "../components/Footer"
+import { Faq } from "../components/Faq"
+import { Cta } from "../components/Cta"
+import { Testimonial } from "../components/Testimonial";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Die Akademie 24 - Gutachter Ausbildung">
+  <ContentTestimonial />
+  <div class="bg-white border-y-2 sm:grid grid-cols-2">
+    <img src="/logo-v1.png" class="max-w-md mx-auto"/>
+    <Cta
+      title="Werde Teil unserer Gutachter-Akademie"
+      subtitle="Qualifiziere Dich als professioneller Kfz-Schadengutachter mit unseren spezialisierten Kursen."
+      primaryAction="Beginne Deine Ausbildung"
+      primaryActionLink="https://tally.so/r/mY4J6d"
+    />
+  </div>
+  <FeatureSectionImage 
+  features={[]} 
+  />
+  <FeatureSectionContent />
+  <Faq />
+  <div class="bg-white border-y-2">
+    <Cta
+      title="Melde Dich jetzt für unsere Gutachter-Schulung an"
+      subtitle="Erhalte eine professionelle Qualifikation als Kfz-Schadengutachter durch unsere spezialisierten Kurse."
+      primaryAction="Starte jetzt mit Deiner Ausbildung"
+      primaryActionLink="https://tally.so/r/mY4J6d"
+    />
+    <img src="/logo-v1.png" class="max-w-md mx-auto"/>
+  </div>
+  <Footer />
+</BaseLayout>
