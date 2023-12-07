@@ -16,7 +16,7 @@ import { Header } from "../components/Header.tsx";
 		<title>{title}</title>
 	</head>
 	<body class="min-h-full text-gray-800">
-    <Header />
+    <Header client:load />
 		<slot />
 	</body>
 </html>
