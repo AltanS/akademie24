@@ -71,7 +71,7 @@ export function ContentTestimonial() {
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
                 <img
-                  src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  src="/mehmet-k.png"
                   alt=""
                   className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
                 />
