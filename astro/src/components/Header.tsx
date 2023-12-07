@@ -86,7 +86,7 @@ export function Header() {
 
       <div className="relative isolate overflow-hidden pt-14">
         <img
-          src="/accident-1.jpg"
+          src="/accident-1-compressed.jpg"
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
